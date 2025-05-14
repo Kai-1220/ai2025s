@@ -154,7 +154,9 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      藉由這次的作業，讓我學會從Civitai尋找文生圖所需的Checkpoint、LoRA，透過Colab跑出UI後進行文生圖參數設定，並藉由正向提示詞跟負面提示詞讓AI自動生成圖片，
+      過程中，我試著增加提示字讓畫面產生變化，另外，我也發現我自己找的Checkpoint、LoRA組合起來容易產生不符合期望的圖片，使得修改了不少次正、負面提示詞，
+      在經過多次的調整及生成後，終於產出了一張不錯的圖片，並完成了本次作業。
     </div>
   </div>
 
@@ -170,22 +172,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成ComfyUI建置</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 完成芙莉蓮文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 替換模型完成辛梅爾文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,18 +197,65 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+            <img src="ComfyUI.png" width="100%"/>
+        </figure>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty"> 
+      <figure>
+        <figcaption>完成芙莉蓮Checkpoint、LoRA文生圖</figcaption>
+        <a href="https://civitai.com/models/1188071?modelVersionId=1337429">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/1209474/a4-test?modelVersionId=1373925">LoRA連結</a>
+        <p>1344 * 768</p>
+        <p>LoRA Strength : 1.0</p>
+        <p>Positive：masterpiece, best quality, high score, absurdres, 1girl, solo, elf, frieren, 
+          sousou no frieren, long hair, pointy ears, flower, blue flower, head wreath, smile, green eyes, 
+          earrings, jewelry, outdoors, sky, falling petals, peaceful atmosphere, warm lighting, soft focus, 
+          detailed background, classic frieren outfit, white and black outfit, gold ornament, thigh-high boots, 
+          capelet, fantasy robe, anime style, clean shading
+        </p>
+        <p>Negative：lowres, bad anatomy, bad hands, text, error, missing finger, extra digits, cropped, worst quality,
+           low quality, average score, signature, watermark, username, blurry, mutated hands, fused fingers, extra arms, 
+           extra person, male, 1boy, wrong outfit, watercolor, painterly, sketch, casual clothes
+        </p>
+        <img src="img1.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>替換Checkpoint、LoRA完成辛梅爾文生圖</figcaption>
+        <a href="https://civitai.com/models/387755/7th-anime-xl-a">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/236807?modelVersionId=266994">LoRA連結</a>
+        <p>1344 * 768</p>
+        <p>LoRA1 Strength : 1.0</p>
+        <p>Positive：masterpiece, best quality, highres, anime style, semi side view, 1girl frieren, white capelet, 
+          striped shirt dress, 1boy himmel, cloak uniform, <lora:himmel_frieren_5:1>, both characters visible, 
+            faces visible, fighting together, standing side by side, facing forward, enemy monster in front, fantasy beast, 
+            in forest, fantasy battlefield, casting magic, sword ready, serious expressions, glowing magical aura, teamwork, 
+            dynamic action, cinematic composition, dramatic lighting, leaves and dust flying
+        </p>
+        <p>Negative：nsfw, lowres, bad anatomy, worst quality, text, username, watermark, signature, jpeg artifacts, blurry, 
+          deformed, back view only, characters facing away, obscured faces, fighting each other
+        </p>
+        <img src="img2.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
 
+  <!-- ------------------------------------------------>
 
 <script>
   $(function() {

@@ -1,0 +1,11 @@
+masterpiece, best quality, high score, absurdres, 1girl, solo, elf, frieren, sousou no frieren, long hair, pointy ears, flower, blue flower, head wreath, smile, green eyes, earrings, jewelry, outdoors, sky, falling petals, peaceful atmosphere, warm lighting, soft focus, detailed background, classic frieren outfit, white and black outfit, gold ornament, thigh-high boots, capelet, fantasy robe, anime style, clean shading
+
+lowres, bad anatomy, bad hands, text, error, missing finger, extra digits, cropped, worst quality, low quality, average score, signature, watermark, username, blurry, mutated hands, fused fingers, extra arms, extra person, male, 1boy, wrong outfit, watercolor, painterly, sketch, casual clothes
+
+
+
+
+
+masterpiece, best quality, highres, anime style, semi side view, 1girl frieren, white capelet, striped shirt dress, 1boy himmel, cloak uniform, <lora:himmel_frieren_5:1>, both characters visible, faces visible, fighting together, standing side by side, facing forward, enemy monster in front, fantasy beast, in forest, fantasy battlefield, casting magic, sword ready, serious expressions, glowing magical aura, teamwork, dynamic action, cinematic composition, dramatic lighting, leaves and dust flying
+
+nsfw, lowres, bad anatomy, worst quality, text, username, watermark, signature, jpeg artifacts, blurry, deformed, back view only, characters facing away, obscured faces, fighting each other
