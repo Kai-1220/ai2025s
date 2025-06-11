@@ -154,7 +154,8 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      透過這次的作業，讓我學會如何使用Comfy UI與提示詞進行圖片生成，並透過連續圖片生成影片，以及有動畫之gif圖片，過程中，我發現因為需生成很多張照片，使得生成過程非常久
+      ，另外，我也嘗試修改Check Point跟LoRa，以及提示詞，讓圖片更符合我的要求，結果出來雖然有修正，但發現修改的程度有限，並完成了本次作業。
     </div>
   </div>
 
@@ -170,22 +171,23 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫
+</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -197,12 +199,58 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <a href="https://civitai.com/models/129199/animemix">CheckPoint: AnimeMix</a><br>
+      <a href="https://civitai.com/models/38063/ai-hoshino-lycoris-oshi-no-ko-hoshino-ai">Lora: Ai Hoshino Lycoris</a><br> 
+       <td>1.Simple baseline - Comfy UI 環境設定完成</td><br>
+       <img src="1.png"  width="800" height="200"><br>
     </div>
   </div>
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+       <td>2.Medium baseline - 生成角色的圖片</td><br>
+       <img src="2.png"  width="500" height="600"><br>
+       <td> 使用提示詞:
+  "0": "dreamy style, floral skirt, wind, hair accessories, smile, Hoshino Ai twirling with sparkles around her",
+  "10": "dreamy style, floral skirt, wind, hair accessories, smile, Hoshino Ai reaching toward floating lights with a gentle smile",
+  "20": "dreamy style, floral skirt, wind, hair accessories, smile, Hoshino Ai surrounded by glowing petals, eyes sparkling",
 
+  "30": "idol stage style, short-sleeved dress, spotlight, Hoshino Ai holding a mic and winking at the audience",
+  "40": "idol stage style, short-sleeved dress, spotlight, Hoshino Ai dancing mid-spin with flowing hair",
+  "50": "idol stage style, short-sleeved dress, spotlight, Hoshino Ai striking a heart pose with confident smile",
+
+  "60": "street fashion style, oversized sweater, slim jeans, Hoshino Ai holding a drink, leaning on a wall with cool attitude",
+  "70": "street fashion style, oversized sweater, slim jeans, Hoshino Ai flipping her hair with a mischievous grin",
+  "80": "street fashion style, oversized sweater, slim jeans, Hoshino Ai walking confidently with earphones in",
+
+  "90": "cozy indoor style, fluffy jacket, woolen hat, gloves, Hoshino Ai cuddling a warm cup with a soft smile",
+  "100": "cozy indoor style, fluffy jacket, woolen hat, gloves, Hoshino Ai lying on a sofa with a plush toy, smiling sweetly",
+  "110": "cozy indoor style, fluffy jacket, woolen hat, gloves, Hoshino Ai making a heart shape with her hands, looking directly at the viewer"
+</td>
+    </div>
+  </div>
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+       <td>3.Strong baseline - 生成完整角色動畫</td><br>
+       <img src="3.gif" ><br>
+       <td> 使用提示詞:
+  "0": "dreamy style, floral skirt, wind, hair accessories, smile, Hoshino Ai twirling with sparkles around her",
+  "10": "dreamy style, floral skirt, wind, hair accessories, smile, Hoshino Ai reaching toward floating lights with a gentle smile",
+  "20": "dreamy style, floral skirt, wind, hair accessories, smile, Hoshino Ai surrounded by glowing petals, eyes sparkling",
+
+  "30": "idol stage style, short-sleeved dress, spotlight, Hoshino Ai holding a mic and winking at the audience",
+  "40": "idol stage style, short-sleeved dress, spotlight, Hoshino Ai dancing mid-spin with flowing hair",
+  "50": "idol stage style, short-sleeved dress, spotlight, Hoshino Ai striking a heart pose with confident smile",
+
+  "60": "street fashion style, oversized sweater, slim jeans, Hoshino Ai holding a drink, leaning on a wall with cool attitude",
+  "70": "street fashion style, oversized sweater, slim jeans, Hoshino Ai flipping her hair with a mischievous grin",
+  "80": "street fashion style, oversized sweater, slim jeans, Hoshino Ai walking confidently with earphones in",
+
+  "90": "cozy indoor style, fluffy jacket, woolen hat, gloves, Hoshino Ai cuddling a warm cup with a soft smile",
+  "100": "cozy indoor style, fluffy jacket, woolen hat, gloves, Hoshino Ai lying on a sofa with a plush toy, smiling sweetly",
+  "110": "cozy indoor style, fluffy jacket, woolen hat, gloves, Hoshino Ai making a heart shape with her hands, looking directly at the viewer"
+</td>
+    </div>
+  </div>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
